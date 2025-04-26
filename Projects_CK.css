@@ -10,6 +10,7 @@
     flex-direction: row;
 }
 
+
 .menu {
     background-color: black;
     width: 100%;
@@ -26,22 +27,23 @@
 .menu-content.active {display: block;}
 
 
-h1 {color:#768ceb;
+h1 {color:black;
     
     align-items: center;
     position: static;}
 
 
-h2 {color:#768ceb;
+h2 {color:white;
+    background-color: #333;
     margin-top: 0%;
-    margin-left: 45%;
+    margin-left: 0%;
     font-size: 30px;
     align-items: center;
     position: static;}
 
-h3 {background-color:#768ceb;}
+h3 {background-color:black;}
 
-p{color:#768ceb;
+p{color:black;
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
@@ -59,7 +61,7 @@ nav ul {
     justify-content: center;
   }
   nav a {
-    color: #768ceb;
+    color: white;
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s, color 0.3s;
@@ -67,12 +69,12 @@ nav ul {
   
   nav a:hover {
     background-color: white;
-    color: #768ceb;
+    color: white;
     text-decoration: underline;
   }
 
 body{
-    background: #ecf4fb;
+    background: white;
 }
 
 .img-gallery{

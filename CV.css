@@ -12,8 +12,8 @@
 }
 
 .user img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-top: 20%;
     margin-left: 30%;
     cursor: pointer;
@@ -40,16 +40,18 @@
 .menu-content.active {display: block;}
 
 
-h1 {color:#768ceb;
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;
     margin-left: 0%;}
 
 
-h2 {color:#768ceb;
+h2 {
     margin-top: 0%;
     margin-left: 0%;
     font-size: 30px;}
 
-h3 {background-color:#768ceb;}
+h3 {background-color: #333;
+   color:white;}
 
 p{color:#768ceb;
   margin-top: 10%;
