@@ -1,19 +1,21 @@
 /* Add your CSS styles here */
 *{
     margin: 20;
-    padding: 10;
+    padding: 20;
+    box-sizing: border-box;
     font-family:  'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: white;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
-}
-
-
-.menu {
     background-color: black;
     width: 100%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,68 +29,148 @@
 .menu-content.active {display: block;}
 
 
-h1 {color:black;
-    
+header h1 {
+    text-align: center;
+    color:black;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+.github-link {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
     align-items: center;
-    position: static;}
-
-
-h2 {color:white;
-    background-color: #333;
-    margin-top: 0%;
-    margin-left: 0%;
-    font-size: 30px;
-    align-items: center;
-    position: static;}
-
-h3 {background-color: #333;
-  color:white}
-
-p{color:black;
-  margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
-  }
-
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.github-link:hover {
+    background-color: #555;
+}
 nav {
     width: 100%;
     background: black;
-  }
-
+}
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
-  }
-  nav a {
+}
+nav li {
+    margin: 0;
+}
+nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px 20px;
+    display: block;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  nav a:hover {
+}
+nav a:hover {
     background-color: white;
+    color: black;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+.section h2 {
     color: white;
-    text-decoration: underline;
-  }
-
-body{
-    background: white;
+    background-color: #333;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.section h4 {
+    color: #667;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-style: italic;
 }
 
-.img-gallery{
-    width:80%;
-    margin: 100px auto 50px;
+.section p {color:black;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+.grid-item {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.grid-item img:hover {
+    transform: scale(1.05);
 }
 
-.img-gallery img{
-    width:100%;
-    cursor: pointer;
+.grid-item video {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
 }
-/* Add more styles as needed */
+.grid-item h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+.grid-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+.video-item {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+}
+.video-item h3 {
+    color: #495057;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
 
