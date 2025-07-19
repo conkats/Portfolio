@@ -27,209 +27,190 @@
         </nav>
     </header>
     
+    <section id="projects-section">
+        <div class="container">
+            
+            <section class="section">
+                <h2>CFD: Thermal Hydraulics</h2>
+                <h4>The list of projects is not limited, projects and repositories which have a proprietary nature are not included.</h4>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="images/Tnondimxyz.png" alt="Non-dimensional Temperature">
+                        <img src="images/Power_spectrum_T_probes_les.png" alt="Power Spectrum">
+                        <h3>High-fidelity modelling- Large Eddy simulations </h3>
+                        <p>Non-dimensional temperature field analysis from simulations 3D differentially heated cavity using code_saturne open-source software.
+                           Power spectrum analysis of temperature fluctuations close to the hot wall region.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/TNonDim.png" alt="Temperature Non-dimensional">
+                        <img src="images/AWF.jpg" alt="Analytical Wall Function">
+                        <h3>Modelling of buoyant flows and developing methods</h3>
+                        <p>Analytical wall function implementation for enhanced near-wall heat transfer modeling using code_saturne open-source .
+                            Non-dimensional temperature from advanced near-wall method developed to model thermal boundary layers.</p>
+                    </div>
 
-<div class="container">
-        <section class="section">
-            <h2>CFD: Aerodynamics, Turbulence Modelling</h2>
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="images/flow_stream_q_crit.png" alt="Flow Stream Q-Criterion">
-                    <h3>Flow Visualization</h3>
-                    <p>Q-criterion analysis showing flow structures and vortex identification in aerodynamic simulations.</p>
+                    <div class="grid-item video-item">
+                        
+                        <video width="100%" height="240" controls>
+                            <source src="videos/nc-keps-ls-rvacs.mp4" type="video/mp4">
+                        </video>
+                        <img src="images/fc-keps-cubic.png" alt="RVACS-Models">
+                        <h3>Reactor Vessel Auxialliary Cooling cavity</h3>
+                        <p>Visualization of model predictions of natural convection flow. Wall shear stress and turbulent kinetic energy profiles predicted from available 
+                            and newly developed models assessed in forced convection using code_saturne open-source .</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/CPV-thesis.png" alt="Concetrated photovoltaic CFD study">
+                        <img src="images/sankey.png" alt="Sankey diagram">
+                        <h3>CFD modelling of CPV</h3>
+                        <p>Temperature field for four photovoltaic cells, including conjugate heat treansfer and UDF scripting in ANSYS fluent.
+                            Cooling efficiency was also optimized.</p>
+                    </div>
+                    <div class="grid-item video-item">
+                        <video width="100%" height="240" controls>
+                            <source src="videos/TempK_nondim.mp4" type="video/mp4">
+                        </video>
+                        <h3>NCL Temperature Visualization</h3>
+                        <p>Dynamic visualization of temperature field evolution in natural convection loop using using ParaView open-source software for post-processing.</p>
+                    </div>
+                    <div class="grid-item video-item">
+                        <h3>Two-Phase Flow</h3>
+                        <video width="100%" height="240" controls>
+                            <source src="videos/vmag_air.mp4" type="video/mp4">
+                        </video>
+                         <img src="images/two_phase_h2o_air_vof_m4@12000_isosurface0.5.png" alt="Two-Phase Flow">
+                        <p>Volume of Fluid simulation in StarCCM+ showing water-air interface dynamics at high resolution. Contour animation of single-phase water flow showing pressure and velocity fields.</p>
+                    </div>
+                    <div class="grid-item video-item">
+                        <video width="100%" height="240" controls>
+                            <source src="videos/U_animation_100.mp4" type="video/mp4">
+                        </video>
+                        <video width="100%" height="240" controls>
+                            <source src="videos/U_animation_10000.mp4" type="video/mp4">
+                        </video>
+                        <img src="images/vel_pipe.png" alt="Velocity Magnitude">
+                        <h3>Porous Media Flow effects</h3>
+                        <p>Flow through porous media simulation in OpenFOAM showing permeability effects and applying methods to account for blockage.</p>
+                    </div>
+                    <div class="grid-item video-item">
+                        
+                        <video width="100%" height="240" controls>
+                            <source src="videos/kepsAWFanimation2.mp4" type="video/mp4">
+                        </video>
+                        <img src="images/pau_workshop.png" alt="Heated Obstacle">
+                        <h3>Modelling of heated compartment-automobile engine </h3>
+                        <p>Flow predictions of natural convection cooling in an experimental heated compartment test case. Flow structures and animation showing predictions from Launder-Sharma k-ε turbulence model with analytical wall functions.</p>
+                    </div>
+                    <div class="grid-item video-item">
+                        <video width="100%" height="240" controls>
+                            <source src="videos/fsi-cs.mp4" type="video/mp4">
+                        </video>
+                        <h3>Flow induced vibration</h3>
+                        <p>Exploring and using code_saturne for modelling flow induced vibrations and simple 1-D spring damp mass approach.</p>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <img src="images/poison_solved.png" alt="Poisson Solution">
-                    <h3>Poisson Solver</h3>
-                    <p>Numerical solution of Poisson equation for pressure correction in CFD applications.</p>
+            </section>
+    <section class="section">
+                <h2>CFD: Aerodynamics, Turbulence Modelling</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="images/flow_stream_q_crit.png" alt="Flow Stream Q-Criterion">
+                        <img src="images/motorbike-U-of.png" alt="Motorbike Aerodynamics">
+                        <h3>Motorbike Aerodynamics</h3>
+                        <p>Complex aerodynamic analysis of motorbike geometry using OpenFOAM. Q-criterion analysis showing flow structures and vortex identification in aerodynamic simulations.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/OF_LES.png" alt="LES of Retau=395">
+                        <img src="images/GAWF-Uplus.png" alt="Reynolds Tau 395 k+">
+                        <h3>Large Eddy Simulation and wall function development</h3>
+                        <p>Large Eddy Simulation results for turbulent channel flow at Re_τ = 395. showing velocity magnitude field (Flow velocity and Q-criterion visualization for identifying coherent vortical structures).
+                            Dimensionless velocity and kinetic energy distribution profile predictions from a Generalised Wall Function implemented using C++ in [OpenFOAM](https://openfoam.org/)!.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/nuTilda.png" alt="Turbulent Viscosity">
+                        <img src="images/gird.png" alt="Computational Grid">
+                        <h3>NASA- Airfoil grid and turbulent Viscosity</h3>
+                        <p>Spalart-Allmaras turbulent viscosity field visualization.</p>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <img src="images/Retau395Uplus.png" alt="Reynolds Tau 395 U+">
-                    <img src="images/Retau395kplus.png" alt="Reynolds Tau 395 k+">
-                    
-                    <h3>Turbulent Velocity and Kinetic energy Profile</h3>
-                    <p>Dimensionless velocity and kinetic energy distribution  profile for turbulent channel flow at Re_τ = 395.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/U_mag_LES_OF.png" alt="U Magnitude LES">
-                    <img src="images/Q-criterion.png" alt="Q-Criterion Visualization">
-                    <h3>LES Velocity Magnitude and Vortex Identification</h3>
-                    <p>Large Eddy Simulation results showing velocity magnitude field using OpenFOAM. Advanced Q-criterion visualization for identifying coherent vortical structures.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/nuTilda.png" alt="Turbulent Viscosity">
-                    <img src="images/gird.png" alt="Computational Grid">
-                    <h3>NASA- Airfoil grid and turbulent Viscosity</h3>
-                    <p>Spalart-Allmaras turbulent viscosity field visualization.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/flat_plate_NASA.png" alt="Flat Plate NASA">
-                    <h3>NASA Flat Plate Validation</h3>
-                    <p>Validation study comparing CFD results with NASA experimental data.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/motorbike-U-of.png" alt="Motorbike Aerodynamics">
-                    <h3>Motorbike Aerodynamics</h3>
-                    <p>Complex aerodynamic analysis of motorbike geometry using OpenFOAM.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/Umag.png" alt="Velocity Magnitude">
-                    <h3>Flow Velocity Analysis</h3>
-                    <p>Comprehensive velocity magnitude analysis for aerodynamic optimization.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>CFD: Thermal Hydraulics</h2>
-            <h4>The list of projects is not limited, projects and repositories which have a proprietary nature are not included.</h4>
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="images/streamlines_with_nt_700.png" alt="Thermal Streamlines">
-                    <h3>Thermal Flow Streamlines</h3>
-                    <p>Streamline visualization with temperature field at 700K showing thermal mixing patterns.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/Tnondimxyz.png" alt="Non-dimensional Temperature">
-                    <h3>Temperature Distribution</h3>
-                    <p>Non-dimensional temperature field analysis in 3D thermal hydraulic systems.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/AWF.jpg" alt="Analytical Wall Function">
-                    <h3>Wall Function Analysis</h3>
-                    <p>Analytical wall function implementation for enhanced near-wall heat transfer modeling.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/Power_spectrum_T_probes_les.png" alt="Power Spectrum">
-                    <h3>LES Temperature Spectrum</h3>
-                    <p>Power spectrum analysis of temperature fluctuations from LES probe data.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/TNonDim.png" alt="Temperature Non-dimensional">
-                    <h3>Thermal Boundary Layer</h3>
-                    <p>Non-dimensional temperature profile analysis in thermal boundary layers.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/velocity_streamlines.png" alt="Velocity Streamlines">
-                    <h3>Flow Streamlines</h3>
-                    <p>Detailed streamline visualization showing complex flow patterns in thermal systems.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/500itertemp.png" alt="Temperature Convergence">
-                    <h3>Temperature Convergence</h3>
-                    <p>Temperature field evolution showing convergence after 500 iterations.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/streamlines.png" alt="Flow Streamlines">
-                    <h3>Flow Visualization</h3>
-                    <p>Streamline patterns revealing flow structures in thermal hydraulic applications.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/two_phase_h2o_air_vof_m4@12000_isosurface0.5.png" alt="Two-Phase Flow">
-                    <h3>Two-Phase Flow (VOF)</h3>
-                    <p>Volume of Fluid simulation showing water-air interface dynamics at high resolution.</p>
-                </div>
-                <div class="grid-item video-item">
-                    <video width="100%" height="240" controls>
-                        <source src="videos/TempThesis15fps.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Temperature Field Animation</h3>
-                    <p>Dynamic visualization of temperature field evolution in thermal systems.</p>
-                </div>
-                <div class="grid-item video-item">
-                    <video width="100%" height="240" controls>
-                        <source src="videos/TempK_nondim.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>NCL Temperature Visualization</h3>
-                    <p>NCL visualization of the temperature field using ParaView for post-processing.</p>
-                </div>
-                <div class="grid-item video-item">
-                    <video width="100%" height="240" controls>
-                        <source src="videos/single_phase_h2o_m3_contour_anima.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Single-Phase Flow Animation</h3>
-                    <p>Contour animation of single-phase water flow showing pressure and velocity fields.</p>
-                </div>
-                <div class="grid-item video-item">
-                    <video width="100%" height="240" controls>
-                        <source src="videos/porous_block.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Porous Media Flow</h3>
-                    <p>Flow through porous media simulation showing permeability effects.</p>
-                </div>
-                <div class="grid-item video-item">
-                    <video width="100%" height="240" controls>
-                        <source src="videos/kepsAWFanimation2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>k-ε Turbulence Model</h3>
-                    <p>Animation showing k-ε turbulence model results with analytical wall functions.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Machine Learning and AI</h2>
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="images/automobile.png" alt="Automobile Analysis">
-                    <h3>Automobile Data Analysis</h3>
-                    <p>Comprehensive analysis of automobile dataset using machine learning techniques.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/price-auto-bodystyle.png" alt="Price vs Body Style">
-                    <h3>Price Prediction Model</h3>
-                    <p>Machine learning model predicting automobile prices based on body style and features.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/pricepergallon.png" alt="Price per Gallon">
-                    <h3>Fuel Efficiency Analysis</h3>
-                    <p>Statistical analysis of fuel efficiency and price relationships in automotive data.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/regression.png" alt="Regression Analysis">
-                    <h3>Regression Modeling</h3>
-                    <p>Advanced regression techniques for predictive modeling and data analysis.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/iris-kmeans-clustering.png" alt="Iris K-means">
-                    <h3>K-means Clustering</h3>
-                    <p>Classic iris dataset clustering using K-means algorithm for pattern recognition.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/mnist-image-processing.png" alt="MNIST Processing">
-                    <h3>MNIST Image Recognition</h3>
-                    <p>Deep learning approach for handwritten digit recognition using neural networks.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/unsupervised-learning-dendrogram.png" alt="Dendrogram">
-                    <h3>Hierarchical Clustering</h3>
-                    <p>Unsupervised learning using hierarchical clustering with dendrogram visualization.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/pca.png" alt="PCA Analysis">
-                    <h3>Principal Component Analysis</h3>
-                    <p>Dimensionality reduction using PCA for feature extraction and data visualization.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/convergence-divergence-heatmap.png" alt="Convergence Heatmap">
-                    <h3>Convergence Analysis</h3>
-                    <p>Heatmap visualization of convergence patterns in machine learning algorithms.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="images/flat-plate-tsne.png" alt="t-SNE Visualization">
-                    <h3>t-SNE Dimensionality Reduction</h3>
-                    <p>t-SNE visualization of high-dimensional CFD data for pattern discovery.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
+            </section>
     
-
+            <section class="section">
+                <h2>Datascience (Machine Learning and AI)</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="images/automobile.png" alt="Automobile Analysis">
+                        <h3>Automobile Data Analysis</h3>
+                        <p>Performed exploratory data analysis of automobile dataset using machine learning techniques and sns packages in python.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/price-auto-bodystyle.png" alt="Price vs Body Style">
+                        <h3>Price Prediction Model</h3>
+                        <p>Machine learning model predicting automobile prices based on body style and features.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/pricepergallon.png" alt="Price per Gallon">
+                        <h3>Fuel Efficiency Analysis</h3>
+                        <p>Statistical analysis of fuel efficiency and price relationships in automotive data.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/diabetes-regression.png" alt="Regression Analysis">
+                        <h3>Regression Modeling</h3>
+                        <p>Advanced regression techniques for predictive modeling and data analysis.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/iris-kmeans-clustering.png" alt="Iris K-means">
+                        <h3>K-means Clustering</h3>
+                        <p>Classic iris dataset clustering using K-means algorithm for pattern recognition.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/mnist-image-processing.png" alt="MNIST Processing">
+                        <h3>MNIST Image Recognition</h3>
+                        <p>Deep learning approach for handwritten digit recognition using neural networks.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/unsupervised-learning-dendrogram.png" alt="Dendrogram">
+                        <h3>Hierarchical Clustering</h3>
+                        <p>Unsupervised learning using hierarchical clustering with dendrogram visualization.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/pca.png" alt="PCA Analysis">
+                        <h3>Principal Component Analysis</h3>
+                        <p>Dimensionality reduction using PCA for feature extraction and data visualization.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/convergence-divergence-heatmap.png" alt="Convergence Heatmap">
+                        <h3>Convergence Analysis</h3>
+                        <p>Heatmap visualization of convergence patterns in machine learning algorithms.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/flat-plate-tsne.png" alt="t-SNE Visualization">
+                        <h3>t-SNE Dimensionality Reduction</h3>
+                        <p>t-SNE visualization of high-dimensional CFD data for pattern discovery.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/database.png" alt="database">
+                        <h3>Database-GUI app</h3>
+                        <p>Developed and deploy a simple database with a GUI using python, SQLite, OPP and PYQt5 for printing shop.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/t44-simple-decision-trees.png" alt="database">
+                        <img src="images/t44-simple-decision-trees-bnd.png" alt="database">
+                        <h3>Simple decision trees in ML</h3>
+                        <p>Understanding the use of simple decision decisition tress and classification using the iris datasets.</p>
+                    </div>
+                    
+                    <div class="grid-item">
+                        <img src="images/tutorial-platform.png" alt="database">
+                        <h3>Training and Platform for CFD & Datascience</h3>
+                        <p>Developed tutorial to teach students how to use datascience and CFD.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+        
+    
     <script src="Portfolio_CK.js"></script>
 
     <footer>
